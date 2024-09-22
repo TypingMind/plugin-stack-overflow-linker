@@ -1,0 +1,34 @@
+{
+    "uuid": "63da964a-a966-443f-beac-3305053336fd",
+    "id": "render_stack_overflow_search_result",
+    "iconURL": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a",
+    "title": "Stack Overflow Linker",
+    "openaiSpec": {
+        "name": "render_stack_overflow_search_result",
+        "parameters": {
+            "type": "object",
+            "required": [
+                "keyword"
+            ],
+            "properties": {
+                "keyword": {
+                    "type": "string",
+                    "description": "The search keyword"
+                }
+            }
+        },
+        "description": "Find and view relevant Stack Overflow questions based on a given keyword and obtain the top matched answers for specific questions using the Stack Exchange API"
+    },    
+    "userSettings": [
+        {
+            "name": "stackExchangeKey",
+            "type": "password",
+            "label": "Stack Exchange API Key",
+            "placeholder": "Enter your Stack Exchange API Key",
+            "description": "Get your API key from https://stackapps.com/apps/oauth/register",
+            "required": true
+        }
+    ],
+    "implementationType": "javascript",
+    "outputType": "render_html"
+}
