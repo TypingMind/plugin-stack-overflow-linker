@@ -1,4 +1,4 @@
-# Stack Overflow Linker v1.0.0
+# Stack Overflow Linker
 
 This plugin helps you find relevant Stack Overflow questions and retrieves the best answers using the Stack Exchange API.
 
